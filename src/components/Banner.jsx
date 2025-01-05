@@ -11,7 +11,7 @@ const Banner = () => {
             <div className="w-full bg-gray-100">
                 <Swiper modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]} spaceBetween={30} slidesPerView={1} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }}
                     autoplay={{ delay: 1800, disableOnInteraction: false }}
-                    className="h-full">
+                    className="h-full md:h-[33rem]">
 
                     <SwiperSlide className="relative h-[400px]">
                         <img src="https://i.ibb.co.com/c21FTHV/b-1.png"
