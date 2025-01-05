@@ -12,6 +12,7 @@ import PrivateRoute from "../routes/PrivateRoute";
 import Details from "../pages/Details";
 import UpdateCampaign from "../pages/UpdateCampaign";
 import RunningCampaign from "../components/RunningCampaign";
+import AboutUs from "../pages/AboutUs";
 
 const Route = createBrowserRouter([
   {
@@ -86,6 +87,11 @@ const Route = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>,
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
+
       },
       {
         path: '/register',
