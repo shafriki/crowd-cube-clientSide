@@ -24,15 +24,20 @@ const NavBar = () => {
       
       <NavLink to="/allcampaign" className={({ isActive }) => isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}> All Campaign </NavLink>
       
-      <NavLink to="/addCampaign" className={({ isActive }) =>isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}>Add New Campaign</NavLink>
+      
       
       {user && (
+        <>
         <NavLink to={`/myCampaign/${user.email}`} className={({ isActive }) => isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}> My Campaign
         </NavLink>
+
+        <NavLink to="/addCampaign" className={({ isActive }) =>isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}>Add New Campaign</NavLink>
+
+        <NavLink to="/donation" className={({ isActive }) => isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}>My Donations</NavLink>
+        </>
       )}
 
-      <NavLink to="/donation" className={({ isActive }) => isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}>My Donations
-      </NavLink>
+      
 
       <NavLink to="/about" className={({ isActive }) =>isActive ? 'font-bold text-[#E74C3C]' : 'text-[#ECF0F1]'}>About Us</NavLink>
     </>
