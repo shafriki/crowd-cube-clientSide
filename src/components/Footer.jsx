@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -19,11 +20,11 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <h6 className="footer-title">Links</h6>
-                    <a className="link link-hover">Home</a>
-                    <a className="link link-hover">All Campaign</a>
-                    <a className="link link-hover">Add New Campaign</a>
-                    <a className="link link-hover">My Campaign</a>
-                    <a className="link link-hover">My Donations</a>
+                    <Link to='/home' className="link link-hover">Home</Link>
+                    <Link to='/allcampaign' className="link link-hover">All Campaign</Link>
+                    <Link to='/addCampaign' className="link link-hover">Add New Campaign</Link>
+                    <Link to='/myCampaign/:email' className="link link-hover">My Campaign</Link>
+                    <Link to='/donation' className="link link-hover">My Donations</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Legal</h6>
